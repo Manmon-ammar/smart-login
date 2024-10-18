@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login</title>
+    <!-- bootstrap -->
+     <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <!-- css -->
+     <link rel="stylesheet" href="./css/style.css">
+</head>
+<body class="d-flex justify-content-center align-items-center">
+    <div class="container my-5 shadow-lg p-5 w-50">
+        <h1 class="text-center text-info text-capitalize fs-2">smart login system</h1>
+        <!-- ^ login form -->
+        <form class="loginForm d-flex flex-column align-items-center justify-content-center">
+            <input type="email" class="form-control my-3 email" placeholder="Enter your email">
+            <input type="password" class="form-control mb-3 password" placeholder="Enter password">
+            <p class="errorMessage"></p>
+            <button class="btn btn-outline-info w-100 loginBtn">login</button>
+            <p class="text-white mt-3">Don't have an account? <a href="#" class="signUpLink">Sign Up</a></p>
+        </form>
+        <!-- ! signup form -->
+        <form class="signUpForm d-none flex-column align-items-center justify-content-center">
+            <input type="text" class="form-control my-3 name" placeholder="Enter your name">
+            <input type="email" class="form-control mb-3 email" placeholder="Enter your email">
+            <input type="password" class="form-control mb-3 password" placeholder="Enter password">
+            <p class="errorMessage"></p>
+            <button class="btn btn-outline-info w-100 signUpBtn">Sign up</button>
+            <p class="text-white mt-3">Already have an account? <a href="#" class="signInLink">SignIn</a></p>
+        </form>
+    </div>
+    <script src="./js/script.js"></script>
+</body>
+</html>
